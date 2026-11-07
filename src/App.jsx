@@ -7,14 +7,14 @@ import {
   useLocation
 } from "react-router-dom";
 
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-import Home from "./components/pages/home";
-import Login from "./components/pages/login";
-import Signup from "./components/pages/signup";
+import Home from "./components/pages/Home";
+import Login from "./components/pages/Login";
+import Signup from "./components/pages/Signup";
 import AdminDashboard from "./components/pages/AdminDashboard";
-import UserDashboard from "./components/pages/userdashboard";
+import UserDashboard from "./components/pages/Userdashboard";
 
 import "./style.css";
 
