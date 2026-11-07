@@ -1,0 +1,374 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    height: 70px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff3c00;
+}
+
+.register-btn {
+    background: #ff3c00;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 10%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    color: #ff3c00;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 25px 0;
+    color: #dddddd;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff3c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main-btn:hover {
+    background: #ff5a26;
+}
+
+/* ================= TOURNAMENT ================= */
+
+.tournaments {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.tournaments h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #151515;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #cccccc;
+    margin: 10px 0;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff3c00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #ff5a26;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: #aaa;
+}
+
+/* ================= LOGIN / REGISTER ================= */
+
+.auth-body {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9)
+        ),
+        url("https://images.unsplash.com/photo-1511512578047-dfb367046420")
+        center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-box {
+    background: #151515;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.auth-box h1 {
+    text-align: center;
+    color: #ff3c00;
+    margin-bottom: 20px;
+}
+
+.auth-box h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    margin: 10px 0 25px;
+}
+
+.auth-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.auth-box input,
+.auth-box select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-box input:focus,
+.auth-box select:focus {
+    border-color: #ff3c00;
+}
+
+.auth-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: #ff3c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #ff5a26;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+.bottom-text a {
+    color: #ff3c00;
+    text-decoration: none;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.back-home:hover {
+    color: #ff3c00;
+}
+
+/* ================= ADMIN / USER ================= */
+
+.dashboard {
+    min-height: 70vh;
+    padding: 40px 7%;
+}
+
+.dashboard h1 {
+    margin-bottom: 15px;
+}
+
+.dashboard-section {
+    margin-top: 40px;
+}
+
+.dashboard-section h2 {
+    color: #ff3c00;
+    margin-bottom: 25px;
+}
+
+.admin-form {
+    max-width: 500px;
+    background: #151515;
+    padding: 25px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.admin-form input,
+.admin-form select {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.admin-form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.stats-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: #151515;
+    border: 1px solid #ff3c00;
+    padding: 25px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.stat-card h2 {
+    color: #ff3c00;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 50px 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .auth-box {
+        padding: 25px;
+    }
+}
