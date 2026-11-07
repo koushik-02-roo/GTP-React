@@ -14,7 +14,7 @@ import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
 import AdminDashboard from "./components/pages/AdminDashboard";
-import UserDashboard from "./components/pages/Userdashboard";
+import UserDashboard from "./components/pages/UserDashboard";
 
 import "./style.css";
 
